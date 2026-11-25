@@ -37,3 +37,7 @@ out/
 .vscode/
 
 .env
+
+
+# Contraseña de Aiven (solo local, no subir a GitHub)
+src/main/resources/application-local.properties
