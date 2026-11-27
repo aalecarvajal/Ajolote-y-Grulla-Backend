@@ -2,8 +2,6 @@ package com.generation.ajoloteygrulla.model;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name="estado_pedido")
@@ -17,26 +15,26 @@ public class EstadoPedido {
     @Column(name="nombre", nullable = false, unique = true, length = 50)
     private String nombre;
 
-    //constructor
+
     public EstadoPedido(){
 
-    }
+    }//constructor vacío
 
     public EstadoPedido(String nombre){
         this.nombre = nombre;
-    }
+    }//constructor sobrecargado
 
     public Integer getId() {
         return id;
-    }
+    }//getId
 
     public String getNombre() {
         return nombre;
-    }
+    }//getNombre
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
+    }//setNombre
 
     @Override
     public String toString() {
@@ -44,4 +42,4 @@ public class EstadoPedido {
                 "id=" + id + ", nombre='" + nombre + "'}";
     }// toString
 
-}
+}//EstadoPedido
